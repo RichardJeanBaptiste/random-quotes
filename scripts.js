@@ -26,7 +26,12 @@ function getQuote(){
   $("#tweetIt").on("click", function(){
      window.open("https://twitter.com/intent/tweet?text=" + quote + " - " + author); 
   });
- 
+
+$("#changePage").on("click", function(){
+    window.location.href = "gameOfThrones/gameofthrones.html";
+});
+
+
 });
 
  
