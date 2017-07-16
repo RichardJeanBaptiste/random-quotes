@@ -2,6 +2,11 @@
 $(document).ready(function(){
 
 
+// Change back to main page
+$("#changePage1").on("click", function(){
+    window.location.href = "C:/Users/USER11/Documents/Projects/random-quotes/main.html";
+});
+
 
 //randomQuote();
 
@@ -10,9 +15,11 @@ function randomQuote(){
       var url = "https://got-quotes.herokuapp.com/quotes?char=";
       $.getJSON(url,function(data){
            quote = data.quote;
-           console.log(quote);
+           //console.log(quote);
            character = data.character;
-           console.log(character);
+           //console.log(character);
+           $("#cQuote").html(quote);
+           $("#cName").html(character);
       });
   }
 
@@ -22,9 +29,12 @@ function getQuote(charName){
 
      $.getJSON(url,function(data){
            quote = data.quote;
-           console.log(quote);
+           //console.log(quote);
            character = data.character;
-           console.log(character);
+           //console.log(character);
+           $("#cQuote").html(quote);
+           $("#cName").html(character);
+
       });
 }
 
@@ -37,8 +47,8 @@ $("#bronnB").click(function(){
       getQuote("bronn");
 });
 
-$("#bryndenTullyB").click(function(){
-      getQuote("brynden");
+$("#daenerysB").click(function(){
+      getQuote("daenerys");
 });
 
 $("#cerseiB").click(function(){
