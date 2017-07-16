@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 // Change back to main page
 $("#changePage1").on("click", function(){
-    window.location.href = "C:/Users/USER11/Documents/Projects/random-quotes/main.html";
+    window.location.href = "C:/Users/USER11/Documents/Projects/random-quotes/main%20page/main.html";
 });
 
 

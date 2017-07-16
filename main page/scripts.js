@@ -13,7 +13,7 @@ function getQuote(){
            author = data.quoteAuthor;
      
      $("#mainQ").html(quote);
-     $("#mainA").html(author);
+     $("#mainA").html(" - " + author);
 
 
       });
@@ -28,7 +28,7 @@ function getQuote(){
   });
 
 $("#changePage").on("click", function(){
-    window.location.href = "gameOfThrones/gameofthrones.html";
+    window.location.href = "C:/Users/USER11/Documents/Projects/random-quotes/gameOfThrones/gameofthrones.html";
 });
 
 
