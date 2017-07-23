@@ -28,7 +28,7 @@ function getQuote(){
   });
 
 $("#changePage").on("click", function(){
-    window.location.href = "C:/Users/USER11/Documents/Projects/random-quotes/gameOfThrones/gameofthrones.html";
+    window.location.href = "https://richinbk.github.io/random-quotes/gameOfThrones/gameofthrones.html";
 });
 
 
