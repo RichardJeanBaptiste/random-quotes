@@ -11,16 +11,19 @@ function getQuote(){
            quote = data.quoteText;
            console.log(quote);
            author = data.quoteAuthor;
+           author1 = author.replace(/ /g,"_"); // author name with underscore
      
      $("#mainQ").html(quote);
-     $("#mainA").html(" - " + author);
-
+     //$("#mainA").html(" - " + author);
+     $("#mainA").append("<a href =" + "https://en.wikipedia.org/wiki/" + author1 + ">" + author + "</a>");
 
       });
   }
 
+
   $("#newQuote").on("click", function(){
       getQuote();
+      $("a").remove();
   });
 
   $("#tweetIt").on("click", function(){
