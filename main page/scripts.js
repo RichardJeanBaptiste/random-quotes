@@ -14,7 +14,6 @@ function getQuote(){
            author1 = author.replace(/ /g,"_"); // author name with underscore
      
      $("#mainQ").html(quote);
-     //$("#mainA").html(" - " + author);
      $("#mainA").append("<a href =" + "https://en.wikipedia.org/wiki/" + author1 + ">" + author + "</a>");
 
       });
