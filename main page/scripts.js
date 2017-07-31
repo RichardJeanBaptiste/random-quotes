@@ -5,6 +5,7 @@ $(document).ready(function(){
 getQuote();
 
 
+
 function getQuote(){
       var url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
       $.getJSON(url,function(data){
@@ -14,15 +15,16 @@ function getQuote(){
            author1 = author.replace(/ /g,"_"); // author name with underscore
      
      $("#mainQ").html(quote);
-     $("#mainA").append("<a href =" + "https://en.wikipedia.org/wiki/" + author1 + ">" + author + "</a>");
+     $("#mainA").append("<a " + " " + "id=" + "currentQuote" + " href =" + "https://en.wikipedia.org/wiki/" + author1 + ">" + author + "</a>");
 
       });
   }
 
+  
 
   $("#newQuote").on("click", function(){
       getQuote();
-      $("a").remove();
+      $("#currentQuote").remove();
   });
 
   $("#tweetIt").on("click", function(){
@@ -32,7 +34,6 @@ function getQuote(){
 $("#changePage").on("click", function(){
     window.location.href = "https://richinbk.github.io/random-quotes/gameOfThrones/gameofthrones.html";
 });
-
 
 });
 
