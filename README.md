@@ -1,6 +1,6 @@
 # random-quotes
 This page will give you random quotes to make you seem deep and stuff on social media
-- https://richinbk.github.io/random-quotes/main%20page/main.html
+- https://RichardJeanBaptiste.github.io/random-quotes/main%20page/main.html
 
 
 
